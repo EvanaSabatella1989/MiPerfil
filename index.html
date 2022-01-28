@@ -5,11 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cf1a0b0945.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Perfil</title>
 </head>
 
 <body>
+    <div class="contenedor">
+        <header class="encabezado" id="volver">
+            <div class="centrado">
+                <h1>HOLA!</h1>
+                <h2>SOY EVANA SABATELLA</h2>
+                <h3>Full Stack Developer con Python</h3>
+                <h3>Te invito a que conozcas mas de mi:</h3>
+            </div>
+            <div class="menu-nav">
+                <nav>
+                    <div class="tarjeta">
+                        <a href="#sobreMi" class="nav">Sobre Mi</a>
+                        <p>Hola! Mi nombre es Evana Sabatella, tengo 32 años y soy una apasionada del Desarrollo Web</p>
+                    </div>
+                    <div class="tarjeta">
+                        <a href="#misTrabajos" class="nav">Mis Trabajos</a>
+                        <p>En esta seccion de mostrare algunos de mis logros desarrollados...</p>
+                    </div>
+                    <div class="tarjeta">
+                        <a href="#miCV" class="nav">MI CV</a>
+                        <p>Entra aqui para ver mi Curriculum Vitae...</p>
+                    </div>
+                    <div class="tarjeta">
+                        <a href="#contacto" class="nav">Contacto</a>
+                        <p>Aqui podras contactarte conmigo..</p>
+                    </div>
 
+                </nav>
+            </div>
+        </header>
+        <br>
+        <br>
+        <main class="contenido">
+            <div class="container">
+                <h1 class="titulo" id="sobreMi">SOBRE MI</h1>
+                <img src="photo2.jpg" alt="" class="foto">
+                <h2 class="sobre">Hola! Mi nombre es Evana Sabatella, tengo 32 años y soy una apasionada del Desarrollo
+                    Web Desde
+                    pequeña
+                    me encantaba lo que era la creatividad,y terminando la escuela debia decidir lo que realmente queria
+                    para mi futuro. Si bien conocia algo de Computacion, la verdad es que no tenia idea de como
+                    funcionaba
+                    por eso decidi hacer un par de cursos sobre Word, Excel, Power Point y Access. Luego mi hermano
+                    mayor me
+                    recomendo ver algunos videos sobre Desarrollo Web y asi cada vez me iria adentrando mas a este mundo
+                    al
+                    cual amaria. En un principio debo reconocer que me costaba mucho aprender a realizar codigo y ver lo
+                    que
+                    yo queria ver en el resultado final, pero con mucha practica logre hacer de esto mi trabajo diario.
+                </h2>
+                <a href="#volver" class="boton">Volver</a>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <h1 class="titulo" id="misTrabajos">MIS TRABAJOS</h1>
+                <h2>Estos son mis trabajos:</h2>
+                <h3>Puedes ver cada uno de ellos haciendo click sobre el link que prefieras.</h3>
+
+                <ul>
+                    <li class="trabajo"><a href="">MIND AND BODY</a></li>
+                    <li class="trabajo"><a href="">CALCULADORA</a></li>
+                    <li class="trabajo"><a href="">PORTAFOLIO</a></li>
+                </ul>
+                <a href="#volver" class="boton">Volver</a>
+            </div>
+            <br>
+            <br>
+
+            <div class="container">
+                <h1 id="miCV">MI CV</h1>
+                <h2>Aqui podras ver y descargar mi CV</h2>
+                <iframe src="Evana Sabatella (1).pdf" frameborder="0" width="50%" class="iframe"></iframe>
+                <br>
+                <a href="Evana Sabatella (1).pdf" target="_blank">Ir a la Descarga</a>
+                <br>
+                <a href="#volver" class="boton">Volver</a>
+            </div>
+            <br>
+            <br>
+
+
+            <div class="container" id="contacto">
+
+
+                <form action="#" name="formulario" id="formulario" method="GET">
+                    <div class="form-group">
+                        <h1>CONTACTATE CONMIGO</h1>
+                        <label for="usr">Nombre:</label>
+                        <input type="text" name="nombre" id="usr">
+                        <br>
+                        <br>
+                        <label for="lsn">Apellido:</label>
+                        <input type="text" name="apellido" id="lsn">
+                        <br>
+                        <br>
+                        <label for="cel">Nro Celular:</label>
+                        <input type="text" name="tel" id="cel">
+                        <br>
+                        <br>
+                        <label for="mail">E-Mail:</label>
+                        <input type="email" name="mail" id="mail">
+                        <br>
+                        <br>
+                        <div>
+                            <label for="comment">Comentario:</label>
+                            <textarea rows="5" id="comment"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn btn-info " id="btn" name="btn" value="Enviar">
+
+                        </div>
+
+                    </div>
+                </form>
+                <h1 class="respuesta"></h1>
+                <h2>O encuentrame en mis redes sociales:</h2>
+
+                <div class="redes">
+                    <a href="http://www.twwiter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EvanaSabatella1989/" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <br>
+                <a href="#volver" class="boton">Volver</a>
+            </div>
+
+        </main>
+        <footer class="pie">
+
+        </footer>
+    </div>
 </body>
 
 </html>
