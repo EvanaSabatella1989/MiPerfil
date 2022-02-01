@@ -92,6 +92,10 @@ nav a {
   width: 90%;
 }
 
+#mailto {
+  opacity: 0;
+}
+
 @keyframes cambio {
   0% {
     margin-left: 0;
