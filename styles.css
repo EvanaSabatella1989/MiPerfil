@@ -3,8 +3,12 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(241, 237, 231);
   font-size: 100%;
+}
+
+.nombre{
+  font-size: 30px;
 }
 
 .contenedor {
@@ -13,8 +17,37 @@ body {
 }
 
 .centrado {
-  text-align: center;
+  /* text-align: center; */
   /* font-size: 150%; */
+  margin: auto;
+  display: table;
+  background: rgb(241, 237, 231);
+}
+
+.maquina{
+  float: left;
+  position: relative;
+  margin: 20px 50px;
+  /* color: black; */
+}
+
+.maquina span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 2px solid #000;
+  background: rgb(241, 237, 231);
+
+  animation: maquina 5s infinite alternate steps(29);
+}
+
+@keyframes maquina {
+  from{
+    width: 100%;
+  }
+  to{
+    width: 0;
+  }
 }
 
 nav {
@@ -26,39 +59,68 @@ nav {
   width: 50%;
   border: 2px solid rgb(128, 0, 128);
   margin: 10px;
-  background-color: rgb(202, 17, 147);
+  background-color: rgb(122, 130, 145);
   text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  transition: 400ms;
+  opacity: 0.8;
 }
+
+.tarjeta:hover{
+  opacity: 1;
+}
+
 
 nav a {
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
+  color: rgb(128, 0, 128);
+}
+
+main{
+  background:linear-gradient(rgb(241, 237, 231),rgb(136, 136, 136));
 }
 
 .foto {
   width: 100px;
 }
+
 .trabajo {
-  list-style-type: none;
+  list-style: none;
 }
+
+.trabajo a{
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
 .iframe {
   text-align: center;
   width: 50%;
+}
+
+.sobreMi{
+  text-align: left;
+  font-size: 20px;
 }
 
 .boton {
   border: 2px solid rgb(128, 0, 0);
   text-decoration: none;
   padding: 5px;
-  background-color: rgb(255, 51, 0);
+  background-color: rgb(128, 0, 128);
   border-radius: 10px;
   margin: 5px;
+  color: white;
 }
 
 .container {
   text-align: center;
-  border: 2px solid rgb(128, 0, 28);
+  /* border: 2px solid rgb(128, 0, 128); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +130,10 @@ nav a {
   margin: 15px;
   font-size: 40px;
 }
-
+ 
+.redes a{
+  color: black;
+}
 .slider {
   width: 50%;
   margin: auto;
@@ -80,21 +145,26 @@ nav a {
   padding: 0;
   width: 500%;
 
-  animation: cambio 20s infinite alternate;
+  animation: cambio 10s infinite ;
 }
 
 .slider li {
-  width: 10%;
+ 
   list-style: none;
 }
 
 .slider img {
-  width: 90%;
+  width: 180px;
+  margin: 10px;
 }
+
+
 
 #mailto {
   opacity: 0;
 }
+
+
 
 @keyframes cambio {
   0% {
@@ -114,7 +184,7 @@ nav a {
   50% {
     margin-left: -200%;
   }
-  70% {
+  /*70% {
     margin-left: -200%;
   }
 
@@ -137,7 +207,7 @@ nav a {
   }
   145% {
     margin-left: -500%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
