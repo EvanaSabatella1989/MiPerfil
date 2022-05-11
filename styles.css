@@ -68,6 +68,16 @@ nav {
   opacity: 0.8;
 }
 
+/* .caja-imagen{
+  width: 300px;
+  height: 200px;
+} */
+
+.imagen-tarjeta{
+  padding: 0;
+  border-radius: 30px;
+}
+
 .tarjeta:hover{
   opacity: 1;
 }
@@ -84,7 +94,7 @@ main{
   background:linear-gradient(rgb(241, 237, 231),rgb(136, 136, 136));
 }
 
-.foto {
+.foto{
   width: 100px;
 }
 
